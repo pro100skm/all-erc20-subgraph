@@ -1,0 +1,17 @@
+{
+  "name": "erc20-subgraph",
+  "version": "0.0.1",
+  "description": "Subgraph for indexing all ERC20 token balances and approvals",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "create": "graph create --node https://graph-node.yodaplus.net:8020/  pro100skm/erc20",
+    "remove": "graph remove --node https://graph-node.yodaplus.net:8020/  pro100skm/erc20",
+    "deploy": "graph deploy --node https://graph-node.yodaplus.net:8020/ --ipfs https://graph-node.yodaplus.net:5001 pro100skm/erc20"
+  },
+  "author": "Mr.Popovitsch",
+  "devDependencies": {
+    "@graphprotocol/graph-cli": "^0.20.0",
+    "@graphprotocol/graph-ts": "^0.20.0"
+  }
+}
