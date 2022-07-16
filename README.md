@@ -1,3 +1,4 @@
-Inspired by [`eip721-subgraph`](https://github.com/wighawag/eip721-subgraph), `erc20-subgraph` indexes all ERC20-compliant tokens (balances and approvals).
-
-https://thegraph.com/explorer/subgraph/georgeroman/erc20-subgraph
+1) codegen
+2) build
+3) create
+4) deploy
