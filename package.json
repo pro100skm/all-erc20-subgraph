@@ -5,9 +5,9 @@
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "create": "graph create --node https://graph-node.yodaplus.net:8020/  pro100skm/erc20",
-    "remove": "graph remove --node https://graph-node.yodaplus.net:8020/  pro100skm/erc20",
-    "deploy": "graph deploy --node https://graph-node.yodaplus.net:8020/ --ipfs https://graph-node.yodaplus.net:5001 pro100skm/erc20"
+    "create": "graph create --node https://graph-node.yodaplus.net:8020/  pro100skm/only_xsp",
+    "remove": "graph remove --node https://graph-node.yodaplus.net:8020/  pro100skm/only_xsp",
+    "deploy": "graph deploy --node https://graph-node.yodaplus.net:8020/ --ipfs https://graph-node.yodaplus.net:5001 pro100skm/only_xsp"
   },
   "author": "Mr.Popovitsch",
   "devDependencies": {

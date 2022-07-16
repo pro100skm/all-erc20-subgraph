@@ -7,8 +7,9 @@ dataSources:
     name: ERC20
     network: xinfin-mainnet
     source:
+      address: "36726235dAdbdb4658D33E62a249dCA7c4B2bC68"
       abi: ERC20
-      startBlock: 0
+      startBlock: 36512755
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
