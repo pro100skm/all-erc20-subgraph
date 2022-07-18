@@ -15,10 +15,7 @@ dataSources:
       apiVersion: 0.0.4
       language: wasm/assemblyscript
       entities:
-        - Account
-        - Token
-        - TokenApproval
-        - TokenBalance
+        - ERC20Contract
       abis:
         - name: ERC20
           file: ./abis/ERC20.json
@@ -27,4 +24,4 @@ dataSources:
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: ./src/mapping.ts
+      file: ./src/new_mapping.ts

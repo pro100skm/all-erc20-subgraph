@@ -5,13 +5,14 @@
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "create": "graph create --node https://graph-node.yodaplus.net:8020/  pro100skm/only_xsp",
-    "remove": "graph remove --node https://graph-node.yodaplus.net:8020/  pro100skm/only_xsp",
-    "deploy": "graph deploy --node https://graph-node.yodaplus.net:8020/ --ipfs https://graph-node.yodaplus.net:5001 pro100skm/only_xsp"
+    "create": "graph create --node https://graph-node.yodaplus.net:8020/  pro100skm/only_short_xsp",
+    "remove": "graph remove --node https://graph-node.yodaplus.net:8020/  pro100skm/only_short_xsp",
+    "deploy": "graph deploy --node https://graph-node.yodaplus.net:8020/ --ipfs https://graph-node.yodaplus.net:5001 pro100skm/only_short_xsp"
   },
   "author": "Mr.Popovitsch",
   "devDependencies": {
-    "@graphprotocol/graph-cli": "^0.20.0",
-    "@graphprotocol/graph-ts": "^0.20.0"
+    "@graphprotocol/graph-cli": "^0.20.1",
+    "@graphprotocol/graph-ts": "^0.20.1",
+    "@openzeppelin/subgraphs": "0.1.0"
   }
 }

@@ -55,38 +55,6 @@ function loadOrCreateToken(event: ethereum.Event): Token | null {
   return token;
 }
 
-export function handleApproval(event: Approval): void {
-  let token = loadOrCreateToken(event);
-  if (!token) {
-    return;
-  }
-
-  let owner = event.params.owner.toHex();
-  let spender = event.params.spender.toHex();
-  let value = event.params.value.toBigDecimal();
-
-  let ownerAccount = loadOrCreateAccount(owner);
-  let spenderAccount = loadOrCreateAccount(spender);
-
-  if (!ownerAccount || !spenderAccount) {
-    return;
-  }
-
-  let tokenApproval = TokenApproval.load(
-    token.id + "-" + ownerAccount.id + "-" + spenderAccount.id
-  );
-  if (!tokenApproval) {
-    tokenApproval = new TokenApproval(
-      token.id + "-" + ownerAccount.id + "-" + spenderAccount.id
-    );
-    tokenApproval.token = token.id;
-    tokenApproval.ownerAccount = ownerAccount.id;
-    tokenApproval.spenderAccount = spenderAccount.id;
-  }
-  tokenApproval.value = value;
-  tokenApproval.save();
-}
-
 export function handleTransfer(event: Transfer): void {
   let token = loadOrCreateToken(event);
   if (!token) {
